@@ -5,7 +5,7 @@ import { RootReducer } from '@/store'
 import { close } from "@/store/reducers/carrinho";
 import { getTotalPrice, parseToBrl } from '@/utils'
 
-import CardsModal from '../listCardsModal'
+import ListCardsModal from '../listCardsModal'
 import * as S from './styles'
 
 
@@ -29,7 +29,7 @@ export default function Modal() {
         </S.HeaderModal>
 
         <S.ContentModal>
-          <CardsModal />
+          <ListCardsModal />
         </S.ContentModal>
 
         <S.FooterModal>

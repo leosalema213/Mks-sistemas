@@ -22,7 +22,7 @@ export default function Header({ bg_header_color }: HeaderProps) {
 
   return (
     <HeaderContainer bg_header_color={bg_header_color}>
-      <HeaderTitle className="title">
+      <HeaderTitle>
         <h1>MKS</h1>
         <p>Sistemas</p>
       </HeaderTitle>

@@ -6,7 +6,7 @@ import { Product } from '@/interface/Produtos';
 
 import CardModal from "../cardModal";
 
-export default function CardsModal() {
+export default function ListCardsModal() {
 
   const { cart } = useSelector((state: RootReducer) => state)
   const dispatch = useDispatch()

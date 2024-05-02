@@ -19,7 +19,7 @@ export default function Card({ image, description, price, title, buybutton }: Ca
         </div>
         <p>{description}</p>
       </CardBody>
-      <CardButton onClick={buybutton}>
+      <CardButton data-testid="btn-comprar" onClick={buybutton}>
         <img src="/assets/shopping-bag.png" />
         Comprar
       </CardButton>

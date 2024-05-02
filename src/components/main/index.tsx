@@ -1,4 +1,4 @@
-import Cards from '../listCards'
+import ListCards from '../listCards'
 
 import * as S from './styles'
 
@@ -6,7 +6,7 @@ export default function Main() {
   return (
     <S.Main>
         <S.GridContainer>
-          <Cards />
+          <ListCards />
         </S.GridContainer>
     </S.Main>
   )
