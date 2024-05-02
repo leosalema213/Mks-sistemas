@@ -26,4 +26,3 @@ export default function Card({ image, description, price, title, buybutton }: Ca
     </CardContainer>
   )
 }
-gt
