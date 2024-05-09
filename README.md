@@ -1,10 +1,10 @@
 
-# Mks.Sistemas 
+# Mks-Sistemas 
 
 Projeto desenvolvido para processo seletivo dev Front-End
 
 ## Deploy
-[https://pharma-project.vercel.app/](https://mkssistemas-lps.vercel.app/)
+https://mkssistemas-lps.vercel.app/
 
 ## Funcionalidades
 
