@@ -9,7 +9,7 @@ export const HeaderContainer = styled.header<HeaderProps>`
   margin-bottom: 80px;
 
   background-color: ${(props) =>
-  props.bg_header_color && props.bg_header_color};
+    props.bg_header_color && props.bg_header_color};
   color: #ffffff;
 
   .carrinho {
@@ -27,21 +27,33 @@ export const HeaderContainer = styled.header<HeaderProps>`
     font-weight: 700;
     cursor: pointer;
   }
+
+  @media (max-width: 480px) {
+    padding: 12px;
+  }
 `;
 
-export const HeaderTitle = styled.div `
-    display: flex;
-    gap: 8px;
+export const HeaderTitle = styled.div`
+  display: flex;
+  gap: 8px;
 
+  h1 {
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 19px;
+  }
+  p {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 19px;
+    margin-top: 4px;
+  }
+  @media (max-width: 480px) {
     h1 {
-      font-size: 40px;
-      font-weight: 600;
-      line-height: 19px;
+      font-size: 30px;
     }
     p {
-      font-size: 20px;
-      font-weight: 300;
-      line-height: 19px;
-      margin-top: 4px;
+      font-size: 16px;
     }
+  }
 `;

@@ -59,4 +59,17 @@ export const CardModalContainer = styled.div`
     width: 18px;
     height: 18px;
   }
+
+  @media (max-width: 488px) {
+    padding:  18px 12px;
+    margin-bottom: 12px;
+
+    img {
+      max-width: 50px;
+      max-height: 50px;
+    }
+    div.buttonQtd {
+      margin: 0 20px 0 10px;
+    }
+  }
 `;

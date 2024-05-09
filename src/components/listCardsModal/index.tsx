@@ -8,7 +8,7 @@ import CardModal from "../cardModal";
 
 export default function ListCardsModal() {
 
-  const { cart } = useSelector((state: RootReducer) => state)
+  const cart = useSelector((state: RootReducer) => state.cart)
   const dispatch = useDispatch()
 
   const removeAllProducts = (id: number) => {

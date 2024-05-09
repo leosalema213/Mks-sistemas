@@ -18,8 +18,8 @@ export default function Modal() {
   }
   return (
     isOpen &&
-    (<motion.div initial={{ opacity: 0, }} whileInView={{ opacity: 1, }}>
-      <S.Modal>
+    (<motion.div initial={{ opacity: 0, }} animate={{ opacity: 1, }}>
+      <S.ModalContainer>
         <S.HeaderModal>
           <h2>Carrinho <br />de compras</h2>
 
@@ -42,7 +42,7 @@ export default function Modal() {
             Finalizar compra
           </button>
         </S.FooterModal>
-      </S.Modal>
+      </S.ModalContainer>
     </motion.div>
     )
   )

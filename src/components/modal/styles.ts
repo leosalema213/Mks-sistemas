@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Modal = styled.div`
+export const ModalContainer = styled.div`
   position: fixed;
   top: 0;
   right: 0;
@@ -12,6 +12,10 @@ export const Modal = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
+  @media (max-width: 488px) {
+    width: 100%;
+  }
 `;
 
 export const HeaderModal = styled.div`
@@ -31,6 +35,16 @@ export const HeaderModal = styled.div`
     border: none;
     cursor: pointer;
   }
+  @media (max-width: 488px) {
+    padding: 20px;
+
+    button {
+      img {
+        width: 32px;
+        height: 32px;
+      }
+    }
+  }
 `;
 
 export const ContentModal = styled.div`
@@ -40,6 +54,10 @@ export const ContentModal = styled.div`
   width: 100%;
   height: 100%;
   overflow-y: auto;
+
+  @media (max-width: 488px) {
+    padding: 20px;
+  }
 `;
 
 export const FooterModal = styled.div`
@@ -62,5 +80,15 @@ export const FooterModal = styled.div`
     background-color: #000;
     color: #fff;
     border: none;
+  }
+
+  @media (max-width: 488px) {
+    div.total {
+      padding: 20px 20px;
+      font-size: 22px;
+    }
+    button {
+        font-size: 24px;
+      }
   }
 `;
